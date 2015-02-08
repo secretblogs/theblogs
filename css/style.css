@@ -33,7 +33,7 @@
 
 	body,input,textarea,select
 	{
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Helvetica', sans-serif;
 		font-weight: 300;
 		font-size: 17pt;
 		line-height: 1.75em;
@@ -627,15 +627,19 @@
 		input[type="reset"],
 		.button
 		{
-			-webkit-appearance: none;
-			position: relative;
+			/*-webkit-appearance: none;*/
+			/*position: relative;*/
 			display: inline-block;
-			background: #3d3d3d;
-			padding: 0.85em 3em 0.85em 3em;
+			background: #000;
+			/*background-image:		url('images/overlay.png'),				url("../svg/19-4-arrow.svg");
+			background-size:			auto,								auto;
+			background-position:		top left,							center center;
+			background-repeat:			repeat,*/								no-repeat;
+		
+			padding: 19em 0 19em 0;
 			border-radius: 0.25em;
 			cursor: pointer;
 			border: 0;
-			color: #fff;
 			text-align: center;
 			text-decoration: none;
 			-moz-transition: all 0.25s ease-in-out;
@@ -817,13 +821,13 @@
 	{
 		position: relative;
 		margin: 0;
-		background-image:			url('images/overlay.png'),			url('../images/header.jpg');
-		background-size:			auto,								cover;
-		background-position:		top left,							center center;
+		background-image:		url('images/overlay.png'),				url("../svg/19-4.svg");
+		background-size:			auto,								70% 70%;
+		background-position:		top left,							top center;
 		background-repeat:			repeat,								no-repeat;
 		padding: 14em 0 14em 0;
 		text-align: center;
-		color: #fff;
+		color: #f8f8f8;
 	}
 	
 		#header header
@@ -832,6 +836,7 @@
 		
 			#header header h1
 			{
+				display: none;
 				font-size: 2.25em;
 				line-height: 1.25em;
 				margin-bottom: 0;
@@ -839,6 +844,7 @@
 			
 			#header header p
 			{
+				display: none;
 				margin-top: 1.25em;
 				font-weight: 100;
 				padding: 0;
